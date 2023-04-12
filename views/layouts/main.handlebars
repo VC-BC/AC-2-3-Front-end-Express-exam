@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A Page by Express</title>
+
+  <!-- 引入css -->
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+</head>
+
+<body>
+  <!-- nav -->
+  <nav class="navbar">
+    <div class="btn-container">
+      <button id="home" type="button" class="btn btn-secondary m-2">回到首頁</button>
+      <button id="about" type="button" class="btn btn-secondary m-2">About</button>
+      <button id="portfolio" type="button" class="btn btn-secondary m-2">Portfolio</button>
+      <button id="contact" type="button" class="btn btn-secondary m-2">Contact</button>
+    </div>
+  </nav>
+
+
+  <!-- partial templates -->
+  {{{ body }}}
+
+  <!-- 引入js  -->
+  <script src="/javascripts/popper.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
+</body>
+
+</html>
