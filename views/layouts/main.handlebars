@@ -9,16 +9,22 @@
 
   <!-- 引入css -->
   <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/setting.css">
 </head>
 
 <body>
   <!-- nav -->
   <nav class="navbar">
     <div class="btn-container">
-      <button id="home" type="button" class="btn btn-secondary m-2">回到首頁</button>
-      <button id="about" type="button" class="btn btn-secondary m-2">About</button>
-      <button id="portfolio" type="button" class="btn btn-secondary m-2">Portfolio</button>
-      <button id="contact" type="button" class="btn btn-secondary m-2">Contact</button>
+      <button id="home" type="button" class="home btn btn-secondary m-2"><a href="/">回到首頁</a></button>
+
+      <div class="sub-btns">
+        <button id="about" type="button" class="about btn btn-secondary m-2"><a href="/about">About</a></button>
+        <button id="portfolio" type="button" class="portfolio btn btn-secondary m-2"><a
+            href="/portfolio">Portfolio</a></button>
+        <button id="contact" type="button" class="contact btn btn-secondary m-2"><a href="/contact">Contact</a></button>
+      </div>
+
     </div>
   </nav>
 

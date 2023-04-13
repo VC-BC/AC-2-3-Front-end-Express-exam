@@ -3,6 +3,7 @@ const app = express()
 const port = 3000
 const exphbs = require('express-handlebars')
 
+
 // template engine
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
@@ -12,15 +13,27 @@ app.use(express.static('public'))
 
 // route
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('index', { pageTitle: '首頁' })
 })
+
+app.get('/about', (req, res) => {
+  res.render('index', { pageTitle: 'About' })
+})
+
+app.get('/portfolio', (req, res) => {
+  res.render('index', { pageTitle: 'Portfolio' })
+})
+
+app.get('/contact', (req, res) => {
+  res.render('index', { pageTitle: 'Contact' })
+})
+
 
 app.get('/:page', (req, res) => {
   const pageTitle = req.params.page
   res.render('index', { pageTitle })
 })
 
-// console.log(req.params) <-WHY印出{}?
 
 // listen
 app.listen(port, () => {
@@ -28,3 +41,4 @@ app.listen(port, () => {
 })
 
 
+// console.log(req.params) <-WHY印出{}?
