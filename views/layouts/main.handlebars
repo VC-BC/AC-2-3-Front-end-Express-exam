@@ -16,13 +16,14 @@
   <!-- nav -->
   <nav class="navbar">
     <div class="btn-container">
-      <button id="home" type="button" class="home btn btn-secondary m-2"><a href="/">回到首頁</a></button>
+      <!-- 用<a>的寫法取代<button>的寫法，點擊btn邊緣才有效果 -->
+      <!--<button id="home" type="button" class="home btn btn-secondary m-2"><a href="/">回到首頁</a></button> -->
+      <a class="btn btn-secondary m-2" href="/" role="button">回到首頁</a>
 
       <div class="sub-btns">
-        <button id="about" type="button" class="about btn btn-secondary m-2"><a href="/about">About</a></button>
-        <button id="portfolio" type="button" class="portfolio btn btn-secondary m-2"><a
-            href="/portfolio">Portfolio</a></button>
-        <button id="contact" type="button" class="contact btn btn-secondary m-2"><a href="/contact">Contact</a></button>
+        <a class="about btn btn-secondary m-2" href="/about" role="button">About</a>
+        <a class="portfolio btn btn-secondary m-2" href="/portfolio" role="button">Portfolio</a>
+        <a class="contact btn btn-secondary m-2" href="/contact" role="button">Contact</a>
       </div>
 
     </div>
